@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div style="margin-top: 80px; font-size: 2vw; width: 65%;" class="container-box">
+            <b> "Thanks a ton for taking out your precious time and for completing the survey
+                </b>
+                <br>
+                <b id="emailprint">Email</b>
+                <br>
+                <b id="numberprint">Number</b>
+        </div>
+    </div>
+
+</body>
+<script>
+    var user = JSON.parse(localStorage.getItem('user'));
+    document.querySelector('#emailprint').textContent = "Email Address - " + user.email;
+    document.querySelector('#numberprint').textContent = "Contact Number - " + user.code +" " + user.number+'"';
+    localStorage.removeItem('user');
+</script>
+
+</html>

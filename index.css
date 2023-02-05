@@ -1,0 +1,120 @@
+.container{
+    width: 100%;
+    display: flex;
+}
+
+.container-box{
+    width: 45%;
+    margin: auto;
+}
+h4{
+    margin-top: -20px;
+}
+
+form{
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    /* border: 1px solid red; */
+}
+.inputdiv{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+input{
+    width: calc(100% - 12px);
+    font-size: 20px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid ;
+    
+}
+select{
+    width: 80px;
+    padding: 10.1px; 
+    font-size: larger; 
+    border: 1px solid ;
+    border-right: none;
+     
+}
+img{
+    width: 100%;
+}
+
+.input{
+    width: 100%;
+    display: flex;
+    margin-top: 20PX;
+    text-align: left;
+    /* border: 1px solid red; */
+}
+.input input{
+    width: calc(100%-80%);
+    border-left: none;
+}
+
+.input ~ input{
+    margin: auto;
+    margin-top: 20px;
+    width:calc(100%);
+    background-color: rgb(43, 40, 40);
+    padding: 8px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+b{
+    display: block;
+}
+#emailpera{
+    display: none;
+    position: relative;
+    float: right;
+    top: -40px;
+    right: 20px;
+    color: red;
+}
+#numberpera{
+     display: none;
+    position: relative;
+    float: right;
+    top: -45px;
+    right: 20px;
+    color: red;
+}
+
+#emailinvalid, #numberinvalid{
+    display: none;
+    position: relative;
+    color: red;
+    top: -10px;
+    /* left: -130px; */
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 1000px){
+    .container{
+        display: block;
+    }
+    .container-box{
+        width: 80%;
+    }
+}
+@media screen and (min-width: 80px) and (max-width: 575px){
+    .container{
+        display: block;
+    }
+    .container-box{
+        width: 96%;
+    }
+    input, select{
+        font-size: small;
+        
+    }
+    select{
+        width: 70px;
+    }
+    p{
+        font-size: small;
+    }
+}
